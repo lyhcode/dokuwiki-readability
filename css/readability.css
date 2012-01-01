@@ -1,0 +1,178 @@
+/* Solarized */
+html, body {
+  width: 100%; }
+
+body {
+  background-color: #f8f8f5; }
+
+#dokuwiki__site {
+  width: 705px;
+  max-width: none;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 0;
+  padding-right: 0; }
+  #dokuwiki__site .dokuwiki {
+    padding: 0 .5em; }
+
+#dokuwiki__header {
+  margin: 0; }
+
+#dokuwiki__header h1 a {
+  color: #9C0001; }
+
+#dokuwiki__usertools, #dokuwiki__pagetools {
+  background-color: #000000;
+  color: #aaaaaa;
+  font-size: 0.875em;
+  box-shadow: 0 0 3px #888888;
+  -moz-box-shadow: 0 0 3px #888888;
+  -webkit-box-shadow: 0 0 3px #888888;
+  filter: dropshadow(color=#888888, offx=0, offy=0); }
+  #dokuwiki__usertools a, #dokuwiki__usertools a.wikilink2, #dokuwiki__pagetools a, #dokuwiki__pagetools a.wikilink2 {
+    color: #ffffff; }
+
+#dokuwiki__aside {
+  display: none; }
+
+#paper {
+  margin-left: 63px;
+  background-color: #fdfdfa;
+  box-shadow: 0px 0px 5px #acacac;
+  -moz-box-shadow: 0px 0px 5px #acacac;
+  -webkit-box-shadow: 0px 0px 5px #acacac;
+  filter: dropshadow(color=#acacac, offx=0px, offy=0px); }
+
+form.button input.button {
+  display: inline-block;
+  background: transparent url(../images/edit_icon.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  border: none;
+  color: transparent; }
+
+div.toc {
+  width: auto;
+  font-size: 1.125em;
+  position: relative;
+  float: none; }
+  div.toc .tocheader {
+    display: none; }
+  div.toc #toc__inside {
+    background: transparent; }
+  div.toc ul, div.toc ol {
+    padding: 0; }
+    div.toc ul li, div.toc ul dd, div.toc ol li, div.toc ol dd {
+      margin: 0;
+      padding: 0; }
+      div.toc ul li ul li, div.toc ul li ul dd, div.toc ul li ol li, div.toc ul li ol dd, div.toc ul dd ul li, div.toc ul dd ul dd, div.toc ul dd ol li, div.toc ul dd ol dd, div.toc ol li ul li, div.toc ol li ul dd, div.toc ol li ol li, div.toc ol li ol dd, div.toc ol dd ul li, div.toc ol dd ul dd, div.toc ol dd ol li, div.toc ol dd ol dd {
+        margin-left: 2em;
+        list-style: disc; }
+  div.toc a {
+    color: #9C0001; }
+
+.mode_show #dokuwiki__content .pad {
+  margin-left: 0; }
+
+.headings h1 a {
+  font-size: 15px; }
+.headings .claim {
+  font-size: 13px;
+  font-weight: normal; }
+
+#dokuwiki__footer {
+  font-size: .75em; }
+  #dokuwiki__footer a {
+    font-size: .5em; }
+
+#dokuwiki__sidebar {
+  position: fixed;
+  left: 0;
+  top: 0; }
+  #dokuwiki__sidebar #toolbar {
+    margin-top: 2em; }
+    #dokuwiki__sidebar #toolbar ul {
+      margin: 0;
+      padding: 0; }
+    #dokuwiki__sidebar #toolbar li {
+      margin: 0 0 10px 12px;
+      padding: 0; }
+    #dokuwiki__sidebar #toolbar a {
+      border: 1px solid #eaeaea;
+      padding: 5px;
+      display: block; }
+    #dokuwiki__sidebar #toolbar a:hover {
+      background: #fff; }
+
+.page {
+  color: #080000;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 19px; }
+  .page h1 {
+    color: #080000;
+    line-height: 1em;
+    font-size: 1.7em;
+    font-weight: bold;
+    font-style: normal;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #CDCDCC;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: .2em;
+    padding-bottom: .1em;
+    margin-top: 4px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: .5em;
+    clear: both;
+    text-shadow: 2px 2px 2px #aaaaaa;
+    -moz-text-shadow: 2px 2px 2px #aaaaaa;
+    -webkit-text-shadow: 2px 2px 2px #aaaaaa;
+    filter: dropshadow(color=#aaaaaa, offx=2px, offy=2px); }
+    .page h1 a {
+      color: #080000; }
+  .page h2 {
+    color: #080000;
+    font-size: 1.25em;
+    font-weight: bold;
+    font-style: normal;
+    text-shadow: 2px 2px 2px #cccccc;
+    -moz-text-shadow: 2px 2px 2px #cccccc;
+    -webkit-text-shadow: 2px 2px 2px #cccccc;
+    filter: dropshadow(color=#cccccc, offx=2px, offy=2px); }
+  .page h3 {
+    font-size: 1em;
+    color: #333333; }
+  .page h4 {
+    color: #9C0001; }
+  .page a.urlextern, .page a.wikilink1 {
+    color: #9C0001;
+    text-decoration: none; }
+  .page a.urlextern {
+    background: none;
+    margin: 0;
+    padding: 0; }
+  .page p {
+    line-height: 1.5em; }
+  .page pre {
+    font-size: .75em;
+    font-family: 'Droid Sans Mono', monospace;
+    background: #fdf6e3;
+    border: 1px solid #eeeeee; }
+  .page ul li {
+    list-style: disc outside; }
+
+/* GeSHi Syntax Highlighter */
+pre.code {
+  color: #586e75; }
+  pre.code .st0 {
+    color: #dc322f; }
+  pre.code .nu0 {
+    color: #6c71c4; }
+  pre.code .kw1 {
+    color: #b58900; }
+  pre.code .br0 {
+    color: #859900; }
+  pre.code .sy0 {
+    color: #859900; }

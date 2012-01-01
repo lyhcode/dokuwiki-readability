@@ -1,0 +1,250 @@
+/* Solarized */
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+@mixin text-shadow($h, $v, $radius, $color) {
+	text-shadow: $h $v $radius $color;
+	-moz-text-shadow: $h $v $radius $color;
+	-webkit-text-shadow: $h $v $radius $color;
+	filter: dropshadow(color=$color, offx=$h, offy=$v);
+}
+
+@mixin box-shadow($h, $v, $radius, $color) {
+	box-shadow: $h $v $radius $color;
+	-moz-box-shadow: $h $v $radius $color;
+	-webkit-box-shadow: $h $v $radius $color;
+	filter: dropshadow(color=$color, offx=$h, offy=$v);
+}
+
+
+html, body {
+	width: 100%;
+}
+body {
+	background: {
+		color: #f8f8f5;
+	}
+}
+#dokuwiki__site {
+	width: 705px;
+	max-width: none;
+	padding: {
+		top: 2em;
+		bottom: 2em;
+		left: 0;
+		right: 0;
+	}
+	.dokuwiki {
+		padding: 0 .5em;
+	}
+}
+#dokuwiki__header {
+	margin: 0;
+}
+#dokuwiki__header h1 a {
+	color: #9C0001;
+}
+#dokuwiki__usertools, #dokuwiki__pagetools {
+	background-color: #000000;
+	color: #aaaaaa;
+	font-size: 0.875em;
+	@include box-shadow(0, 0, 3px, #888888);
+	a, a.wikilink2 {
+		color: #ffffff;
+	}
+}
+#dokuwiki__sitetools {
+}
+#dokuwiki__aside {
+	display: none;
+}
+#paper {
+	margin-left: 63px;
+	background-color: #fdfdfa;
+	@include box-shadow(0px, 0px, 5px, #acacac);
+}
+form.button input.button {
+	display: inline-block;
+	background: transparent url(../images/edit_icon.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	border: none;
+	color: transparent;
+}
+div.toc {
+	width: auto;
+	font-size: 1.125em;
+	position: relative;
+	float: none;
+	.tocheader {
+		display: none;
+	}
+	#toc__inside {
+		background: transparent;
+	}
+	ul, ol {
+		padding: 0;
+		li, dd {
+			margin: 0;
+			padding: 0;
+
+			ul, ol {
+				li, dd {
+					margin-left: 2em;
+					list-style: disc;
+				}
+			}
+		}
+	}
+	a {
+		color: #9C0001;
+	}
+}	
+.mode_show #dokuwiki__content .pad{
+	margin-left:0;
+}
+.headings {
+	h1 a {
+		font: {
+			size: 15px;
+		}
+	}
+	.claim {
+		font: {
+			size: 13px;
+			weight: normal;
+		}
+	}
+}
+#dokuwiki__footer {
+	font-size: .75em;
+	a {
+		font-size: .5em;
+	}
+}
+#dokuwiki__sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	#toolbar {
+		margin-top: 2em;
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 0 0 10px 12px;
+			padding: 0;
+		}
+		a {
+			border: 1px solid #eaeaea;
+			padding: 5px;
+			display: block;
+		}
+		a:hover {
+			background: #fff;
+		}
+	}
+}
+.page {
+	color: #080000;
+	font: {
+		family: Georgia, 'Times New Roman', serif;
+		size: 19px;
+	}
+	h1 {
+		a {
+			color: #080000;
+		}
+		color: #080000;
+		line-height: 1em;
+		font: {
+			size: 1.7em;
+			weight: bold;
+			style: normal;
+		}
+		border-bottom: {
+			width: 2px;
+			style: solid;
+			color: #CDCDCC;
+		}
+		padding: {
+			left: 0;
+			right: 0;
+			top: .2em;
+			bottom: .1em;
+		}
+		margin: {
+			top: 4px;
+			left: 0;
+			right: 0;
+			bottom: .5em;
+		}
+		clear: both;
+		@include text-shadow(2px, 2px, 2px, #aaaaaa);
+	}
+	h2 {
+		color: #080000;
+		font: {
+			size: 1.25em;
+			weight: bold;
+			style: normal;
+		}
+		@include text-shadow(2px, 2px, 2px, #cccccc);
+	}
+	h3 {
+		font: {
+			size: 1em;
+		}
+		color: #333333;
+	}
+	h4 {
+		color: #9C0001;
+	}
+	a.urlextern, a.wikilink1 {
+		color: #9C0001;
+		text-decoration: none;
+
+	}
+	a.urlextern {
+		background: none;
+		margin: 0;
+		padding: 0;
+	}
+	p {
+		line-height: 1.5em;
+	}
+	pre {
+		font-size: .75em;
+		font-family: 'Droid Sans Mono', monospace;
+		background: #fdf6e3;
+		border: 1px solid #eeeeee;
+
+	}
+	ul li {
+		list-style: disc outside;
+	}
+}
+/* GeSHi Syntax Highlighter */
+pre.code {
+	color: $base01;
+	.st0 { color: $red; }
+	.nu0 { color: $violet; }
+	.kw1 { color: $yellow; }
+	.br0 { color: $green; }
+	.sy0 { color: $green; }
+}
