@@ -54,9 +54,12 @@ body {
 }
 #dokuwiki__header {
 	margin: 0;
-}
-#dokuwiki__header h1 a {
-	color: #9C0001;
+	.headings, .tools {
+		margin-bottom: .5em;
+	}
+	h1 a {
+		color: #9C0001;
+	}
 }
 #dokuwiki__usertools, #dokuwiki__pagetools {
 	background-color: #000000;
@@ -68,6 +71,18 @@ body {
 	}
 }
 #dokuwiki__sitetools {
+	#qsearch__in {
+		font-size: .75em;
+		border: 1px solid #cccccc;
+		background: #f8f8f5;
+	}
+	.button {
+		font-size: .75em;
+	}
+	a {
+		font-size: .5em;
+		color: #9C0001;
+	}
 }
 #dokuwiki__aside {
 	display: none;
@@ -204,15 +219,33 @@ div.toc {
 			weight: bold;
 			style: normal;
 		}
+		margin: {
+			top: 1em;
+			bottom: 1em;
+			left: 0;
+			right: 0;
+		}
 		@include text-shadow(2px, 2px, 2px, #cccccc);
 	}
 	h3 {
 		font: {
 			size: 1em;
 		}
+		margin: {
+			top: .5em;
+			bottom: .5em;
+			left: 0;
+			right: 0;
+		}
 		color: #333333;
 	}
 	h4 {
+		margin: {
+			top: .25em;
+			bottom: .25em;
+			left: 0;
+			right: 0;
+		}
 		color: #9C0001;
 	}
 	a.urlextern, a.wikilink1 {
@@ -228,12 +261,25 @@ div.toc {
 	p {
 		line-height: 1.5em;
 	}
+	p, ul, ol, dl, pre, table, hr, blockquote, fieldset, address {
+		margin: {
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: .5em;
+		}
+	}
 	pre {
 		font-size: .75em;
 		font-family: 'Droid Sans Mono', monospace;
 		background: #fdf6e3;
-		border: 1px solid #eeeeee;
-
+		border: 0;
+		box-shadow: white 0 1px 0px, rgba(0, 0, 0, 0.496094) 0 1px 3px 0 inset;
+		-moz-box-shadow: white 0 1px 0px, rgba(0, 0, 0, 0.496094) 0 1px 3px 0 inset;
+		-webkit-box-shadow: white 0 1px 0px, rgba(0, 0, 0, 0.496094) 0 1px 3px 0 inset;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
 	}
 	ul li {
 		list-style: disc outside;

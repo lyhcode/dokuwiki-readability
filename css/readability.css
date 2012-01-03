@@ -17,9 +17,10 @@ body {
 
 #dokuwiki__header {
   margin: 0; }
-
-#dokuwiki__header h1 a {
-  color: #9C0001; }
+  #dokuwiki__header .headings, #dokuwiki__header .tools {
+    margin-bottom: .5em; }
+  #dokuwiki__header h1 a {
+    color: #9C0001; }
 
 #dokuwiki__usertools, #dokuwiki__pagetools {
   background-color: #000000;
@@ -31,6 +32,16 @@ body {
   filter: dropshadow(color=#888888, offx=0, offy=0); }
   #dokuwiki__usertools a, #dokuwiki__usertools a.wikilink2, #dokuwiki__pagetools a, #dokuwiki__pagetools a.wikilink2 {
     color: #ffffff; }
+
+#dokuwiki__sitetools #qsearch__in {
+  font-size: .75em;
+  border: 1px solid #cccccc;
+  background: #f8f8f5; }
+#dokuwiki__sitetools .button {
+  font-size: .75em; }
+#dokuwiki__sitetools a {
+  font-size: .5em;
+  color: #9C0001; }
 
 #dokuwiki__aside {
   display: none; }
@@ -137,14 +148,26 @@ div.toc {
     font-size: 1.25em;
     font-weight: bold;
     font-style: normal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
     text-shadow: 2px 2px 2px #cccccc;
     -moz-text-shadow: 2px 2px 2px #cccccc;
     -webkit-text-shadow: 2px 2px 2px #cccccc;
     filter: dropshadow(color=#cccccc, offx=2px, offy=2px); }
   .page h3 {
     font-size: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: 0;
+    margin-right: 0;
     color: #333333; }
   .page h4 {
+    margin-top: .25em;
+    margin-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
     color: #9C0001; }
   .page a.urlextern, .page a.wikilink1 {
     color: #9C0001;
@@ -155,11 +178,22 @@ div.toc {
     padding: 0; }
   .page p {
     line-height: 1.5em; }
+  .page p, .page ul, .page ol, .page dl, .page pre, .page table, .page hr, .page blockquote, .page fieldset, .page address {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: .5em; }
   .page pre {
     font-size: .75em;
     font-family: 'Droid Sans Mono', monospace;
     background: #fdf6e3;
-    border: 1px solid #eeeeee; }
+    border: 0;
+    box-shadow: white 0 1px 0px, rgba(0, 0, 0, 0.496) 0 1px 3px 0 inset;
+    -moz-box-shadow: white 0 1px 0px, rgba(0, 0, 0, 0.496) 0 1px 3px 0 inset;
+    -webkit-box-shadow: white 0 1px 0px, rgba(0, 0, 0, 0.496) 0 1px 3px 0 inset;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px; }
   .page ul li {
     list-style: disc outside; }
 
