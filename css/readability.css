@@ -202,6 +202,10 @@ div.toc {
     list-style: decimal; }
   .page ol ol li {
     list-style: lower-roman; }
+  .page em {
+    font-style: italic; }
+  .page strong {
+    font-weight: bold; }
 
 /* GeSHi Syntax Highlighter */
 pre.code {

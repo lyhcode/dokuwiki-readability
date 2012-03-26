@@ -292,6 +292,12 @@ div.toc {
 	ol ol li {
 		list-style: lower-roman;
 	}
+	em {
+		font-style:italic;
+	}
+	strong {
+		font-weight:bold;
+	}
 }
 /* GeSHi Syntax Highlighter */
 pre.code {
